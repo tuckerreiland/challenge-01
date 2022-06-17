@@ -10,8 +10,9 @@
 
 <body>
     <!-- changed div elements to semantic elements -->
-    <header class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
+    <!-- got rid of header class and applied attributes to the element -->
+    <header>
+        <h1>Hori<span id="seo">seo</span>n</h1>
         <aside>
             <ul>
                 <li>
@@ -26,9 +27,10 @@
             </ul>
         </aside>
     </header>
-    <figure class="hero"></figure>
-    <main class="content">
-        <article class="search-engine-optimization">
+    <figure id="hero"></figure>
+    <main id="content">
+         <!-- consolidated classes into content-format -->
+        <article class="content-format">
             <!-- Added alt descriptor -->
             <img src="./assets/images/search-engine-optimization.jpg" alt="SEO stock image" class="float-left" />
             <h2>Search Engine Optimization</h2>
@@ -36,7 +38,8 @@
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </article>
-        <article id="online-reputation-management" class="online-reputation-management">
+        <!-- consolidated classes into content-format -->
+        <article class="content-format">
             <!-- Added alt descriptor -->
             <img src="./assets/images/online-reputation-management.jpg" alt="reputation stock image" class="float-right" />
             <h2>Online Reputation Management</h2>
@@ -44,7 +47,8 @@
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
-        <article id="social-media-marketing" class="social-media-marketing">
+         <!-- consolidated classes into content-format -->
+        <article class="content-format">
             <!-- Added alt descriptor -->
             <img src="./assets/images/social-media-marketing.jpg" alt="social media marketing" class="float-left" />
             <h2>Social Media Marketing</h2>
@@ -53,8 +57,9 @@
             </p>
         </article>
     </main>
-    <aside class="benefits">
-        <article class="benefit-lead">
+    <!-- converted class to id -->
+    <aside id="benefits">
+        <article class="benefit-format">
             <h3>Lead Generation</h3>
             <!-- Added alt descriptor -->
             <img src="./assets/images/lead-generation.png" alt="image of a gear funneling into a coin"/>
@@ -62,7 +67,7 @@
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </article>
-        <article class="benefit-brand">
+        <article class="benefit-format">
             <h3>Brand Awareness</h3>
             <!-- Added alt descriptor -->
             <img src="./assets/images/brand-awareness.png" alt="suited man with an atenna light bulb head"/>
@@ -70,7 +75,7 @@
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </article>
-        <article class="benefit-cost">
+        <article class="benefit-format">
             <h3>Cost Management</h3>
             <!-- Added alt descriptor -->
             <img src="./assets/images/cost-management.png" alt="gear and coins" />
@@ -79,7 +84,8 @@
             </p>
         </article>
     </aside>
-    <footer class="footer">
+    <!-- removed class from footer -->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
